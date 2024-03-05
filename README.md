@@ -9,7 +9,7 @@ Install Nand 2 tetris Software tool for testing the .HDL files.
 https://www.nand2tetris.org/software
 
 # Steps to be followed:
-##### Step 1
+#### Step 1
 Understand the logic circuit of the CPU
 ## Step 2
 Build the basic chips in the CPU using NAND gates
