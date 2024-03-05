@@ -11,18 +11,18 @@ https://www.nand2tetris.org/software
 # Steps to be followed:
 ### Step 1
 Understand the logic circuit of the CPU
-## Step 2
+### Step 2
 Build the basic chips in the CPU using NAND gates
-## Step 3
+### Step 3
 After building we have to make use of all these in a single HDL file name CPU
-## Step 4
+### Step 4
 By seeing the connectivity from the logic circuit diagram, we will make the HDL file.
-## Step 5
+### Step 5
 After saving the HDL file we will load this chip into the simulator and test it with various examples.
-## Step 6
+### Step 6
 After building the CPU we will build RAM and ROM HDL files.
-## Step 7
+### Step 7
 Now we will combine CPU, RAM, ROM into a single HDL file named Computer.
-## Step 8
+### Step 8
 After saving the HDL file we will load it into the hardware simulator and test it with various hack file programs
 
