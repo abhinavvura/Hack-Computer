@@ -1,0 +1,48 @@
+ 
+
+CHIP Decoder {
+    IN a,b,c,d,;
+    OUT f0,f1,f2,f3,f4,f5,f6,f7,f8,f9,f10,f11,f12,f13,f14,f15;
+
+    PARTS:
+    Not (in=a, out=nota);
+    Not (in=b, out=notb);
+
+    Not (in=c, out=notc);
+    Not (in=d, out=notd);
+
+    And (a=nota, b=notb, out=p0);
+    And (a=a, b=notb, out=p1);
+    And (a=nota, b=b, out=p2);
+    And (a=a, b=b, out=p3);
+
+    Not (in=p0, out=notp0);
+    Not (in=p1, out=notp1);
+    Not (in=p2, out=notp2);
+    Not (in=p3, out=notp3);
+
+    And3input  (a=notc, b=notd,c=p0, out=f0);
+    And3input  (a=c, b=notd,c=p0,  out=f1);
+    And3input  (a=notc, b=d,c=p0,  out=f2);
+    And3input  ( a=c, b=d, c=p0, out=f3);
+
+
+
+    And3input (a=notc, b=notd,c=p1, out=f4);
+    And3input (a=c, b=notd,c=p1,  out=f5);
+    And3input  (a=notc, b=d,c=p1,  out=f6);
+    And3input  (a=c, b=d, c=p1, out=f7);
+
+    And3input  (a=notc, b=notd,c=p2, out=f8);
+    And3input  (a=c, b=notd,c=p2,  out=f9);
+    And3input  (a=notc, b=d,c=p2,  out=f10);
+    And3input  (a=c, b=d, c=p2, out=f11);
+
+    And3input  (a=notc, b=notd,c=p3, out=f12);
+    And3input  (a=c, b=notd,c=p3,  out=f13);
+    And3input  (a=notc, b=d,c=p3,  out=f14);
+    And3input  (a=c, b=d, c=p3, out=f15);
+
+
+    
+}

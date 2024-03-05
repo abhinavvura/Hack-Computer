@@ -1,0 +1,18 @@
+/**
+Full Adder using Two Half Adders and one OR Gate
+*/
+
+CHIP FAusingHA {
+
+    IN  a,b,c;
+    OUT sum,
+        carry;
+
+    PARTS:
+    HalfAdder(a=a,b=b,sum=ab,carry=cab);
+    HalfAdder(a=ab,b=c,sum=sum,carry=s);
+    Or(a=s,b=cab,out=carry);
+
+}
+
+
