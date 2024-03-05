@@ -6,6 +6,7 @@ The Hack CPU is the heart of the Hack computer project, a simplified 16-bit CPU 
 
 # Requirements:
 Install Nand 2 tetris Software tool for testing the .HDL files.
+https://www.nand2tetris.org/software
 
 # Steps to be followed:
 ## Step 1
