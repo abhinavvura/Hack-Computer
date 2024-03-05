@@ -4,6 +4,9 @@
 # Motive Of Project:
 The Hack CPU is the heart of the Hack computer project, a simplified 16-bit CPU you build yourself.  This educational journey starts with fundamental logic gates and progresses through a hardware simulator to create the core components like the ALU and memory, ultimately resulting in a CPU capable of executing instructions.
 
+#Requirements
+Install Nand2 tetris Software tool for testing the .HDL files.
+
 # Steps to be followed:
 ## Step 1
 Understand the logic circuit of the CPU
